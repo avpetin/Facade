@@ -5,10 +5,10 @@ public class BinOps {
       строках в int, сложите и переведите
       обратно в двоичную запись*/
         String res = null;
-        try{
+        try {
             res = Integer.toBinaryString(Integer.parseInt(a, 2) + Integer.parseInt(b, 2));
+        } catch (NumberFormatException e) {
         }
-        catch (NumberFormatException e){}
         return res;
     }
 
@@ -19,8 +19,8 @@ public class BinOps {
         String res = null;
         try {
             res = Integer.toBinaryString(Integer.parseInt(a, 2) * Integer.parseInt(b, 2));
+        } catch (NumberFormatException e) {
         }
-        catch (NumberFormatException e){}
         return res;
     }
 }
